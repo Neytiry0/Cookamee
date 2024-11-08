@@ -1,0 +1,110 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.btn-dark-mode {
+    cursor: pointer;
+    background-color: #FB1D5B;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn-dark-mode:hover {
+    background-color: #f1c0cf;
+    color: #FB1D5B;
+}
+
+.product-item {
+    background-color: #ffe4e1;
+    border-radius: 8px;
+    padding: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+.product-item:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+.dark-mode .product-item {
+    background-color: #333;
+    color: #ddd;
+}
+.dark-mode .product-item:hover {
+    background-color: #444;
+}
+
+/* Carrito */
+.cart-item {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.dark-mode .cart-item {
+    border-bottom: 1px solid #555;
+}
+
+/* Título de Categorías */
+.category-title {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #FB1D5B;
+}
+.dark-mode .category-title {
+    color: #f1c0cf;
+}
+
+/* Contenedor de Carrito */
+.cart-container {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.dark-mode .cart-container {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+}
+
+/* Botón de Eliminación */
+.btn-remove {
+    cursor: pointer;
+    color: red;
+    transition: color 0.3s;
+}
+.btn-remove:hover {
+    color: #FB1D5B;
+}
+
+/* Ajustes de Modo Oscuro para Enlaces y Botones */
+a, .btn-pink {
+    color: #FB1D5B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover, .btn-pink:hover {
+    color: #f1c0cf;
+}
+.dark-mode a, .dark-mode .btn-pink {
+    color: #f0759a;
+}
+.dark-mode a:hover, .dark-mode .btn-pink:hover {
+    color: #FB1D5B;
+}
+
+/* Modo Oscuro para Botones */
+.btn-remove.dark-mode {
+    color: #f05454;
+}

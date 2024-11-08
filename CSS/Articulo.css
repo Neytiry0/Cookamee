@@ -1,0 +1,142 @@
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #FB1D5B;
+    color: white;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.btn-dark-mode, .btn-search {
+    cursor: pointer;
+    background-color: #FB1D5B;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn-dark-mode:hover, .btn-search:hover {
+    background-color: #f1c0cf;
+    color: #FB1D5B;
+}
+
+.article-section {
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode .article-section {
+    background-color: #1f1f1f;
+    color: #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.article-title {
+    color: #FB1D5B;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.dark-mode .article-title {
+    color: #f1c0cf;
+}
+
+.article-content p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+    transition: color 0.3s;
+}
+.dark-mode .article-content p {
+    color: #ddd;
+}
+
+.article-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: filter 0.3s;
+}
+.dark-mode .article-content img {
+    filter: brightness(0.9);
+}
+
+a {
+    color: #FB1D5B;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+a:hover {
+    color: #f1c0cf;
+}
+.dark-mode a {
+    color: #f0759a;
+}
+.dark-mode a:hover {
+    color: #FB1D5B;
+}
+
+.related-articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+.related-article-item {
+    width: 250px;
+    background-color: #ffe4e1;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.related-article-item:hover {
+    transform: scale(1.05);
+    background-color: #f8f9fa;
+}
+.dark-mode .related-article-item {
+    background-color: #333;
+    color: #ddd;
+}
+.dark-mode .related-article-item:hover {
+    background-color: #444;
+}
+
+footer {
+    background-color: #FB1D5B;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+.dark-mode footer {
+    background-color: #1f1f1f;
+}
+footer a {
+    color: #ffffff;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.dark-mode header {
+    background-color: #1E1E1E;
+    color: #ffffff;
+}
